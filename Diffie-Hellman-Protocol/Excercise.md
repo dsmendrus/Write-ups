@@ -13,8 +13,8 @@ Alicja: Łap zaszyfrowaną flagę.
 PLCPttoNuN/dZyOWEQVpcu+ZPeKldvA+DqpBQgen9/loHpLKAzUQwL1NqD7TWO0ceGiOXVMk5z5KF1PGhdPUFg==
 Bob: Dzięki wielkie. Dzięki naszej bezbłędnej implementacji Diffie Helmana nie ma szans żeby ktoś ją rozszyfrował hehe
 # Part of the showed code
-# Source Generated with Decompyle++
 # File: DH shared secret generation.pyc (Python 3.12)
+```python
 from hashlib import sha256
 from base64 import b64decode
 from base64 import b64encode
@@ -60,6 +60,7 @@ if __name__ == '__main__':
         import sys
         sys.exit(0)
     continue
+ ```
 # My solution
 So as we can see, this chat between users is giving us a clue. The "flawless" implementation of Diffie-Hellman is not so flawless after all
 The main assumption of the DH algorithm is that modular exponentiation is performed as g a mod p. However, the developers mistakenly implemented it as g(a mod p),
